@@ -42,41 +42,6 @@ export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
   },
   {
     index: 2,
-    title: "CodeEasy – Online HTML/CSS/JS Playground",
-    href: "/projects/codeeasy",
-    tags: [
-      "React",
-      "JavaScript",
-      "Live Preview",
-      "Frontend Development",
-      "DOM Manipulation",
-      "Code Playground",
-    ],
-    image: {
-      LIGHT: "/images/projects/codeEasyLight.webp",
-      DARK: "/images/projects/codeEasyDark.webp",
-    },
-  },
-  {
-    index: 3,
-    title: "Realtime Collaborative Code Editor",
-    href: "/projects/realtime-code-editor",
-    tags: [
-      "React",
-      "Node.js",
-      "Socket.io",
-      "Monaco Editor",
-      "Judge0 API",
-      "WebSockets",
-      "Real-time Collaboration",
-    ],
-    image: {
-      LIGHT: "/images/projects/realtimeEditorLight.webp",
-      DARK: "/images/projects/realtimeEditorDark.webp",
-    },
-  },
-  {
-    index: 4,
     title: "Flash Brief News App",
     href: "/projects/flash-brief-news-app",
     tags: [
@@ -93,6 +58,42 @@ export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
       DARK: "/images/projects/flashNewsDark.webp",
     },
   },
+  {
+    index: 3,
+    title: "CodeEasy – Online HTML/CSS/JS Playground",
+    href: "/projects/codeeasy",
+    tags: [
+      "React",
+      "JavaScript",
+      "Live Preview",
+      "Frontend Development",
+      "DOM Manipulation",
+      "Code Playground",
+    ],
+    image: {
+      LIGHT: "/images/projects/codeEasyLight.webp",
+      DARK: "/images/projects/codeEasyDark.webp",
+    },
+  },
+  {
+    index: 4,
+    title: "Realtime Collaborative Code Editor",
+    href: "/projects/realtime-code-editor",
+    tags: [
+      "React",
+      "Node.js",
+      "Socket.io",
+      "Monaco Editor",
+      "Judge0 API",
+      "WebSockets",
+      "Real-time Collaboration",
+    ],
+    image: {
+      LIGHT: "/images/projects/realtimeEditorLight.webp",
+      DARK: "/images/projects/realtimeEditorDark.webp",
+    },
+  },
+  
 ];
 
 export const PROJECTS_CARD: ProjectCardProps[] = [
@@ -146,6 +147,6 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     description:
       "A responsive React-based news aggregation app powered by NewsAPI, featuring country and category filtering, search functionality, pagination, and dark/light theme toggle.",
     sourceCodeHref: "https://github.com/Aakashkethavath/Info_Burst",
-    liveWebsiteHref: "",
+    liveWebsiteHref: "https://flash-brief.vercel.app/",
   },
 ];
