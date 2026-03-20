@@ -93,7 +93,6 @@ export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
       DARK: "/images/projects/realtimeEditorDark.webp",
     },
   },
-  
 ];
 
 export const PROJECTS_CARD: ProjectCardProps[] = [
