@@ -3,7 +3,26 @@ import { type ProjectShowcaseListItem } from "@/components/projects/project-show
 
 export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
   {
-    index: 0,
+    index: 1,
+    title: "Gym Master – Full-Stack Fitness Management App",
+    href: "/projects/gym-master",
+    tags: [
+      "React Native",
+      "Expo",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "TypeScript",
+      "React Query",
+    ],
+    image: {
+      LIGHT: "/images/projects/gymMasterLight.webp",
+      DARK: "/images/projects/gymMasterDark.webp",
+    },
+  },
+  {
+    index: 2,
     title: "Secure Video Streaming & Sensitivity Analysis Platform",
     href: "/projects/video-streaming-platform",
     tags: [
@@ -22,7 +41,7 @@ export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
     },
   },
   {
-    index: 1,
+    index: 3,
     title: "Apply-mate – Job Application Tracking System",
     href: "/projects/apply-mate",
     tags: [
@@ -41,25 +60,7 @@ export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
     },
   },
   {
-    index: 2,
-    title: "Flash Brief News App",
-    href: "/projects/flash-brief-news-app",
-    tags: [
-      "React",
-      "Node.js",
-      "Express.js",
-      "TailwindCSS",
-      "NewsAPI",
-      "REST API Integration",
-      "Responsive UI",
-    ],
-    image: {
-      LIGHT: "/images/projects/flashNewsLight.webp",
-      DARK: "/images/projects/flashNewsDark.webp",
-    },
-  },
-  {
-    index: 3,
+    index: 4,
     title: "CodeEasy – Online HTML/CSS/JS Playground",
     href: "/projects/codeeasy",
     tags: [
@@ -76,26 +77,38 @@ export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
     },
   },
   {
-    index: 4,
-    title: "Realtime Collaborative Code Editor",
-    href: "/projects/realtime-code-editor",
+    index: 5,
+    title: "Flash Brief News App",
+    href: "/projects/flash-brief-news-app",
     tags: [
       "React",
       "Node.js",
-      "Socket.io",
-      "Monaco Editor",
-      "Judge0 API",
-      "WebSockets",
-      "Real-time Collaboration",
+      "Express.js",
+      "TailwindCSS",
+      "NewsAPI",
+      "REST API Integration",
+      "Responsive UI",
     ],
     image: {
-      LIGHT: "/images/projects/realtimeEditorLight.webp",
-      DARK: "/images/projects/realtimeEditorDark.webp",
+      LIGHT: "/images/projects/flashNewsLight.webp",
+      DARK: "/images/projects/flashNewsDark.webp",
     },
   },
 ];
 
 export const PROJECTS_CARD: ProjectCardProps[] = [
+  {
+    name: "Gym Master – Full-Stack Fitness Management App",
+    favicon: "/images/projects/logos/gymMaster.ico",
+    imageUrl: [
+      "/images/projects/gymMasterLight.webp",
+      "/images/projects/gymMasterDark.webp",
+    ],
+    description:
+      "A production-ready gym management platform built with React Native (Expo), Node.js, Express, and MongoDB. Features secure JWT authentication, role-based access control, attendance tracking, workout logging, subscription management, payment tracking, and a scalable REST API for administrators and gym members.",
+    sourceCodeHref: "https://github.com/Aakashkethavath/gym-master",
+    liveWebsiteHref: "",
+  },
   {
     name: "Secure Video Streaming Platform",
     favicon: "/images/projects/logos/jsontree.ico",
@@ -104,7 +117,7 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
       "/images/projects/jsontreeDark.webp",
     ],
     description:
-      "A full-stack multi-tenant video platform with JWT authentication, RBAC, real-time processing updates via Socket.io, and optimized HTTP Range-based video streaming. Includes simulated sensitivity analysis for content moderation.",
+      "A full-stack video streaming platform featuring JWT authentication, role-based access control, HTTP Range-based video streaming, AI-powered content sensitivity analysis, and real-time processing updates using Socket.io for secure and scalable media delivery.",
     sourceCodeHref:
       "https://github.com/Aakashkethavath/video-streaming-platform",
     liveWebsiteHref: "https://video-streaming-nu-three.vercel.app/",
@@ -112,9 +125,12 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
   {
     name: "Apply-mate – Job Application Tracker",
     favicon: "/images/projects/logos/kanban.ico",
-    imageUrl: ["/images/projects/AM.webp", "/images/projects/AMDark.webp"],
+    imageUrl: [
+      "/images/projects/AM.webp",
+      "/images/projects/AMDark.webp",
+    ],
     description:
-      "A MERN-based job tracking platform with JWT authentication and cookie-based session management. Features pagination, advanced filtering, sorting, and search for efficient job application management.",
+      "A MERN-based job application tracking system with JWT authentication, cookie-based session management, advanced filtering, search, sorting, pagination, and an intuitive dashboard for organizing and monitoring job applications efficiently.",
     sourceCodeHref: "https://github.com/Aakashkethavath/Apply_mate",
     liveWebsiteHref: "https://apply-mate-six.vercel.app/",
   },
@@ -126,25 +142,16 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
       "/images/projects/codeEasyLight.webp",
     ],
     description:
-      "A browser-based live code editor that enables real-time HTML, CSS, and JavaScript editing with instant preview rendering. Demonstrates dynamic DOM manipulation and client-side execution.",
+      "A browser-based HTML, CSS, and JavaScript playground with real-time preview, enabling developers to write, edit, and instantly visualize frontend code without leaving the browser.",
     sourceCodeHref: "https://github.com/Aakashkethavath/code_edit",
     liveWebsiteHref: "https://akash-kethavath.github.io/code_edit/",
-  },
-  {
-    name: "Realtime Collaborative Code Editor",
-    favicon: "/images/projects/logos/realtimeCollab.ico",
-    imageUrl: ["/images/projects/cs1.webp", "/images/projects/cs2.webp"],
-    description:
-      "A real-time collaborative code editor built with React, Node.js, Socket.io, and Monaco Editor. Supports multi-user room sessions, live code synchronization, and code execution via Judge0 API.",
-    sourceCodeHref: "https://github.com/Aakashkethavath/code__collab",
-    liveWebsiteHref: "",
   },
   {
     name: "Flash Brief News App",
     favicon: "/images/projects/logos/fb.ico",
     imageUrl: ["/images/projects/ib.webp"],
     description:
-      "A responsive React-based news aggregation app powered by NewsAPI, featuring country and category filtering, search functionality, pagination, and dark/light theme toggle.",
+      "A responsive news application built with React and NewsAPI that delivers the latest headlines with category-based browsing, search, pagination, country filters, and dark/light mode support.",
     sourceCodeHref: "https://github.com/Aakashkethavath/Info_Burst",
     liveWebsiteHref: "https://flash-brief.vercel.app/",
   },
